@@ -1,0 +1,23 @@
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+      jsonplaceholder:
+        connectTimeout: 5000
+        readTimeout: 5000
+
+
+
+
+
+app:
+  feign:
+    client:
+      name: jsonplaceholder
+      url:  http://localhost:9091/
+
+logging:
+  level:
+    com.tryout.spring: DEBUG
